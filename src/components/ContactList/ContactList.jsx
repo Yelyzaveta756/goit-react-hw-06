@@ -12,7 +12,7 @@ const filter = useSelector(selectNameFilter)
 
 const filteredContacts = contacts.filter((contact) => {
     if (filter.trim() === '') {
-        return contacts;
+        return true;
     }
      return contact.name.toLowerCase().includes(filter)
   }
